@@ -6,23 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        table,td{
-            border: 1px solid black;
-        }
         html, body {
-            height: 100%;
-            margin: 0;
-        }
+      height: 100%;
+      margin: 0;
+    }
+
+    table {
+      width: 100vw;
+      height: 100vh;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+
+    td {
+      width: 50%;
+      padding: clamp(16px, 5vw, 50px);
+      font-size: clamp(18px, 3.5vw, 40px);
+      overflow-wrap: break-word;
+      word-break: break-word;
+    }
+
+    table, td {
+      border: 1px solid black;
+    }
     </style>
 </head>
 
 <body>
-    <table style="width: 100%; border-collapse: collapse; height: 100%;">
+    <table>
         <tr>
-            <td style="background-color: rgb(120, 145, 83); padding: 50px;">
+            <td style="background-color: rgb(120, 145, 83);">
                 first cell
             </td>
-            <td style="background-color: rgb(240, 191, 174); padding: 50px;">
+            <td style="background-color: rgb(240, 191, 174);">
                 second cell
             </td>
         </tr>
