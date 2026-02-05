@@ -1,0 +1,31 @@
+.menu {
+  width: 200px;
+  margin: 50px;
+}
+
+.menu-title {
+  font-size: 24px;
+  margin: 0;
+  padding: 10px;
+  background: #003a8f;
+  color: white;
+
+}
+.menu-list {
+  display: none;
+  background: white;
+  border: 1px solid #000000;
+}
+
+.item {
+  padding: 10px;
+  border-bottom: 1px solid #000000;
+}
+
+.item:hover {
+  background: #e6f0ff;
+}
+
+.menu:hover .menu-list {
+  display: block;
+}
