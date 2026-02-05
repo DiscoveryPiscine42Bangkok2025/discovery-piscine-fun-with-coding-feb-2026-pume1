@@ -1,0 +1,30 @@
+.parallax {
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img1 {
+  background-image: url("https://cdn.britannica.com/92/212692-050-D53981F5/labradoodle-dog-stick-running-grass.jpg");
+}
+
+.img2 {
+  background-image: url("https://www.aaha.org/wp-content/uploads/2024/09/kitten-lying-in-blanket.jpg");
+}
+
+.center-text {
+  color: rgb(255, 0, 0);
+  font-size: 40px;
+}
+
+.black {
+  height: 800px;
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
