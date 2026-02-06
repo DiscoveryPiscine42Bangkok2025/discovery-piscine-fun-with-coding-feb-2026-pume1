@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #balloon {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border-radius: 50%;
+            margin: 100px auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="balloon"></div>
+
+    <script>
+        const balloon = document.getElementById("balloon");
+
+        let size = 200;
+        let colors = ["red", "green", "blue"];
+        let colorIndex = 0;
+
+        balloon.onclick = function () {
+            size += 10;
+
+            if (size > 420) {
+                size = 200;
+                colorIndex = 0;
+            } else {
+                colorIndex = (colorIndex + 1) % 3;
+            }
+            updateBalloon();
+        };
+
+        balloon.onmouseleave = function () {
+            size -= 5;
+            if (size < 200) size = 200;
+
+            colorIndex = colorIndex - 1;
+            if (colorIndex < 0) colorIndex = 2;
+
+            updateBalloon();
+        };
+
+        function updateBalloon() {
+            balloon.style.width = size + "px";
+            balloon.style.height = size + "px";
+            balloon.style.backgroundColor = colors[colorIndex];
+        }
+    </script>
+
+</body>
+
+</html>
