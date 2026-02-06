@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: antiquewhite;
+}
+
+.card {
+    width: 320px;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+}
+
+.card h2 {
+    margin-bottom: 15px;
+}
+
+.profile {
+    width: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    padding: 5px;
+    font-size: 14px;
+}
+
+td:first-child {
+    text-align: left;
+}
+
+td:last-child {
+    text-align: right;
+}
+
+.social img {
+    width: 28px;
+    margin: 0 6px 12px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
